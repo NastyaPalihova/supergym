@@ -79,9 +79,11 @@
             <div class="gym__image">
               <div class="gym__static-image">
                 <picture>
-                  <source type="image/webp" srcset="./img/gym@1x.webp 1x, ./img/gym@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/gym-mobile@1x.webp 1x, ./img/gym-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+                    srcset="./img/gym-tablet@1x.webp 1x, ./img/gym-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/gym@1x.webp 1x, ./img/gym@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="./img/gym-mobile@1x.jpg 1x, ./img/gym-mobile@2x.jpg 2x"
                     width="320" height="313">
                   <source media="(max-width: 1199px)" srcset="./img/gym-tablet@1x.jpg 1x, ./img/gym-tablet@2x.jpg 2x"
@@ -91,33 +93,33 @@
                 </picture>
               </div>
 
-                <div class="gym__video" data-video-block>
-                  <div class="gym__video-cover" data-video-cover>
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="img/video-cover-mobile@1x.webp 1x, img/video-cover-mobile@2x.webp 2x">
-                      <source type="image/webp" srcset="img/video-cover@1x.webp 1x, img/video-cover@2x.webp 2x">
-                      <source media="(max-width: 767px)"
-                        srcset="img/video-cover-mobile@1x.jpg 1x, img/video-cover-mobile@2x.jpg 2x">
-                      <img src="img/video-cover.jpg" width="364" height="228" alt="Тренажерный зал."
-                        srcset="img/video-cover@2x.jpg 2x">
-                    </picture>
-                    <button class="gym__video-button" data-video-button>
-                      <span class="visually-hidden">Запустить видео</span>
-                      <svg width="17" height="17">
-                        <use href="img/sprite.svg#triangle"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="gym__video-yt" id="player" data-video-container
-                    data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
+              <div class="gym__video" data-video-block>
+                <div class="gym__video-cover" data-video-cover>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/video-cover-mobile@1x.webp 1x, img/video-cover-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/video-cover@1x.webp 1x, img/video-cover@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/video-cover-mobile@1x.jpg 1x, img/video-cover-mobile@2x.jpg 2x">
+                    <img src="img/video-cover.jpg" width="364" height="228" alt="Тренажерный зал."
+                      srcset="img/video-cover@2x.jpg 2x">
+                  </picture>
+                  <button class="gym__video-button" data-video-button>
+                    <span class="visually-hidden">Запустить видео</span>
+                    <svg width="17" height="17">
+                      <use href="img/sprite.svg#triangle"></use>
+                    </svg>
+                  </button>
                 </div>
+                <div class="gym__video-yt" id="player" data-video-container
+                  data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
               </div>
-
-
             </div>
+
+
           </div>
         </div>
+  </div>
   </div>
   </section>
 
