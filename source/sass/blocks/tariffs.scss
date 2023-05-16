@@ -1,0 +1,247 @@
+.tariffs {
+  position: relative;
+  width: 100%;
+  padding-top: 117px;
+  padding-bottom: 120px;
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 67px;
+  }
+}
+
+.tariffs .container {
+  position: relative;
+}
+
+.tariffs__card-list {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 7px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 54px;
+  row-gap: 40px;
+
+  @include vp-1199 {
+    row-gap: 55px;
+    grid-template-columns: 1fr;
+  }
+
+  @include vp-767 {
+    row-gap: 49px;
+  }
+}
+
+.tariffs h2 {
+  transform: translateX(-2px);
+  margin-bottom: 7px;
+  text-align: center;
+
+  @include vp-1199 {
+    margin-bottom: 10px;
+    transform: translateX(-7px);
+  }
+
+  @include vp-767 {
+    transform: translateX(-5px);
+  }
+}
+
+
+.tariffs__plate-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: -72px;
+  overflow: hidden;
+  display: block;
+  width: 251px;
+  height: 367px;
+
+  @include vp-1199 {
+    bottom: -59px;
+    width: 311px;
+    height: 321px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.tariffs__plate {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.tariffs__card {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 347px;
+  padding: 50px 20px 62px 20px;
+  background-color: $color-default-white;
+
+  @include vp-1199 {
+    max-width: none;
+    width: 64.5%;
+    place-self: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 44px;
+    padding-bottom: 49px;
+  }
+}
+
+.tariffs__card:hover,
+.tariffs__card:focus,
+.tariffs__card:focus-within {
+  &::after {
+    background: $tariffs-gradient;
+  }
+}
+
+.tariffs__card::after {
+  background-color: $color-default-white;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 14px);
+  height: calc(100% + 14px);
+  top: -7px;
+  left: -7px;
+  display: block;
+}
+
+.tariffs__card h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+
+  @include vp-1199 {
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+}
+
+.tariffs__card small {
+  display: block;
+  margin: 0;
+  margin-bottom: 65px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-chambray;
+
+  @include vp-1199 {
+    margin-bottom: 65px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 54px;
+  }
+}
+
+.tariffs__price {
+  position: relative;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $ff-Roboto-Condensed;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $color-egyptian-blue;
+
+  @include vp-1199 {
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 72px;
+
+    transform: translateX(1px);
+  }
+}
+
+.tariffs__price::before {
+  position: absolute;
+  content: attr(data-price);
+  display: block;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: $color-whisper;
+  opacity: 0.48;
+  bottom: -5px;
+
+  @include vp-1199 {
+    bottom: -5px;
+  }
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+.tariffs__price span {
+  position: relative;
+  z-index: 2;
+  margin-right: 14px;
+
+  @include vp-767 {
+    margin-right: 10px;
+  }
+}
+
+.tariffs__price svg {
+  position: relative;
+  z-index: 2;
+  width: 30px;
+  height: 42px;
+  flex-shrink: 0;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.tariffs__button {
+  width: 206px;
+  padding: 25px;
+  text-transform: lowercase;
+}
