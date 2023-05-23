@@ -8,7 +8,7 @@
   @include vp-1199 {
     max-width: none;
     width: 100%;
-    padding: 62px 45px 58px 45px;
+    padding: 56px 45px;
     place-self: start center;
   }
 
@@ -23,8 +23,7 @@
 
   @include vp-1199 {
     width: 74%;
-    margin: 0 auto;
-    margin-bottom: 32px;
+    margin: 0 auto 25px;
   }
 
   @include vp-767 {

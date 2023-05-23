@@ -1379,6 +1379,11 @@ h2 {
   line-height: 65px;
   letter-spacing: 0.03em;
 }
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 42px;
+  }
+}
 
 .rouble {
   font-family: "Rouble", "Arial", sans-serif;
@@ -3033,7 +3038,9 @@ h2 {
 }
 @media (max-width: 1199px) {
   .tariffs h2 {
-    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 42px;
+    margin-bottom: 5px;
     -webkit-transform: translateX(-7px);
         -ms-transform: translateX(-7px);
             transform: translateX(-7px);
@@ -3059,8 +3066,8 @@ h2 {
 @media (max-width: 1199px) {
   .tariffs__plate-wrapper {
     bottom: -59px;
-    width: 311px;
-    height: 321px;
+    width: 348px;
+    height: 319px;
   }
 }
 @media (max-width: 767px) {
@@ -3336,10 +3343,17 @@ h2 {
        -moz-column-gap: 22px;
             column-gap: 22px;
     row-gap: 0;
+    margin-top: 0;
   }
 }
 .promo__description .button {
   padding: 27px 24px 28px 24px;
+}
+@media (max-width: 1199px) {
+  .promo__description .button {
+    padding: 17px 24px 13px;
+    font-size: 10px;
+  }
 }
 
 .promo__description h2 {
@@ -3552,8 +3566,8 @@ h2 {
 }
 @media (max-width: 1199px) {
   .trainer {
-    padding-top: 70px;
-    padding-bottom: 62px;
+    padding-top: 62px;
+    padding-bottom: 54px;
   }
 }
 @media (max-width: 767px) {
@@ -3600,7 +3614,7 @@ h2 {
 }
 @media (max-width: 1199px) {
   .trainer__slider {
-    padding-top: 32px;
+    padding-top: 24px;
     width: calc(100% - 112px);
   }
 }
@@ -3907,7 +3921,7 @@ h2 {
 }
 @media (max-width: 1199px) {
   .feature {
-    padding-top: 93px;
+    padding-top: 83px;
     padding-bottom: 50px;
   }
 }
@@ -3925,7 +3939,7 @@ h2 {
 }
 @media (max-width: 1199px) {
   .feature h2 {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     -webkit-transform: translateX(-4px);
         -ms-transform: translateX(-4px);
             transform: translateX(-4px);
@@ -4194,7 +4208,7 @@ h2 {
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding-top: 43px;
+    padding-top: 35px;
     padding-bottom: 62px;
   }
 }
@@ -4233,7 +4247,7 @@ h2 {
 @media (max-width: 1199px) {
   .reviews__slider {
     width: 100%;
-    padding: 40px 80px;
+    padding: 33px 80px 40px 80px;
   }
 }
 @media (max-width: 767px) {
@@ -4463,7 +4477,7 @@ h2 {
 }
 @media (max-width: 1199px) {
   .advantages {
-    padding-top: 92px;
+    padding-top: 84px;
     padding-bottom: 90px;
   }
 }
@@ -4486,6 +4500,7 @@ h2 {
     -webkit-transform: translateX(-10px);
         -ms-transform: translateX(-10px);
             transform: translateX(-10px);
+    margin-bottom: 36px;
   }
 }
 @media (max-width: 767px) {
@@ -4523,7 +4538,7 @@ h2 {
     -webkit-column-gap: 28px;
        -moz-column-gap: 28px;
             column-gap: 28px;
-    row-gap: 41px;
+    row-gap: 39px;
     padding: 0;
     grid-auto-flow: dense;
   }
@@ -4854,7 +4869,7 @@ h2 {
   .contacts {
     max-width: none;
     width: 100%;
-    padding: 62px 45px 58px 45px;
+    padding: 56px 45px;
     -ms-grid-row-align: start;
     -ms-grid-column-align: center;
     place-self: start center;
@@ -4873,8 +4888,7 @@ h2 {
 @media (max-width: 1199px) {
   .contacts h2 {
     width: 74%;
-    margin: 0 auto;
-    margin-bottom: 32px;
+    margin: 0 auto 25px;
   }
 }
 @media (max-width: 767px) {
@@ -5534,6 +5548,10 @@ h2 {
 }
 .button--secondary::after {
   border: 3px solid #102654;
+}
+
+.tariffs .button--secondary {
+  padding: 24px 0 26px;
 }
 
 .swiper-button-next:after {

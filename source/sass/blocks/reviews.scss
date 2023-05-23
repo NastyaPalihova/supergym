@@ -3,7 +3,7 @@
   padding-bottom: 85px;
 
   @include vp-1199 {
-    padding-top: 43px;
+    padding-top: 35px;
     padding-bottom: 62px;
   }
 
@@ -35,7 +35,7 @@
 
   @include vp-1199 {
     width: 100%;
-    padding: 40px 80px;
+    padding: 33px 80px 40px 80px;
   }
 
   @include vp-767 {

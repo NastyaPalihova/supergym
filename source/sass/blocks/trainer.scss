@@ -4,8 +4,8 @@
   padding-bottom: 105px;
 
   @include vp-1199 {
-    padding-top: 70px;
-    padding-bottom: 62px;
+    padding-top: 62px;
+    padding-bottom: 54px;
   }
 
   @include vp-767 {
@@ -47,7 +47,7 @@
   height: 364px;
 
   @include vp-1199 {
-    padding-top: 32px;
+    padding-top: 24px;
     width: calc(100% - 112px);
   }
 
