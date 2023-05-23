@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding-top: 63px;
+    padding-top: 113px;
     padding-bottom: 67px;
   }
 }
@@ -55,6 +55,8 @@
 
   @include vp-767 {
     transform: translateX(-5px);
+    font-size: 32px;
+    margin-bottom: -3px;
   }
 }
 

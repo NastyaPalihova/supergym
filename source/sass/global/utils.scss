@@ -27,6 +27,10 @@ h2 {
   @include vp-1199 {
     font-size: 42px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+  }
 }
 
 .rouble {
