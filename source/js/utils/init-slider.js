@@ -2,7 +2,7 @@ export const initTrainerSwiper = () => {
   const trainerSlider = new Swiper('.swiper--trainer', { // eslint-disable-line
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 40,
     loopedSlides: 0,
     keyboard: {
       enabled: true,

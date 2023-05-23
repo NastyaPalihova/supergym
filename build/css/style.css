@@ -2527,7 +2527,7 @@ h2 {
   font-size: 48px;
   line-height: 58px;
   margin-top: 38px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 @media (max-width: 1199px) {
   .gym h2 {
@@ -2571,14 +2571,12 @@ h2 {
   font-size: 18px;
 }
 
-.gym__description {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-}
 .gym__description p {
   margin-bottom: 8px;
   margin-top: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
 @media (max-width: 767px) {
   .gym__description {
@@ -2614,6 +2612,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 80px;
+  padding-bottom: 7px;
 }
 @media (max-width: 1199px) {
   .gym__wrapper {
@@ -2976,8 +2975,8 @@ h2 {
 .tariffs {
   position: relative;
   width: 100%;
-  padding-top: 82px;
-  padding-bottom: 120px;
+  padding-top: 76px;
+  padding-bottom: 116px;
   background-color: #f8f9fc;
 }
 @media (max-width: 1199px) {
@@ -3054,8 +3053,8 @@ h2 {
   bottom: -72px;
   overflow: hidden;
   display: block;
-  width: 251px;
-  height: 367px;
+  width: 287px;
+  height: 352px;
 }
 @media (max-width: 1199px) {
   .tariffs__plate-wrapper {
@@ -3270,7 +3269,7 @@ h2 {
 
 .promo {
   padding-bottom: 30px;
-  padding-top: 116px;
+  padding-top: 118px;
 }
 @media (max-width: 1199px) {
   .promo {
@@ -3338,6 +3337,9 @@ h2 {
             column-gap: 22px;
     row-gap: 0;
   }
+}
+.promo__description .button {
+  padding: 27px 24px 28px 24px;
 }
 
 .promo__description h2 {
@@ -3917,6 +3919,7 @@ h2 {
 }
 
 .feature h2 {
+  margin-top: 0;
   margin-bottom: 34px;
   text-align: center;
 }
@@ -4187,7 +4190,7 @@ h2 {
 
 .reviews {
   padding-top: 2px;
-  padding-bottom: 82px;
+  padding-bottom: 85px;
 }
 @media (max-width: 1199px) {
   .reviews {
@@ -4203,6 +4206,8 @@ h2 {
 }
 
 .reviews h2 {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 4px;
   text-align: center;
   -webkit-box-sizing: border-box;
@@ -4474,6 +4479,7 @@ h2 {
       -ms-transform: translateX(5px);
           transform: translateX(5px);
   margin-bottom: 43px;
+  margin-top: 0;
 }
 @media (max-width: 1199px) {
   .advantages h2 {
@@ -4861,6 +4867,7 @@ h2 {
 }
 
 .contacts h2 {
+  margin-top: 0;
   margin-bottom: 38px;
 }
 @media (max-width: 1199px) {
@@ -4965,8 +4972,8 @@ h2 {
 }
 
 .contacts__item address,
-p,
-a {
+.contacts__item p,
+.contacts__item a {
   margin: 0;
   padding: 5px 0;
   font-style: normal;
@@ -4976,8 +4983,8 @@ a {
 }
 @media (max-width: 1199px) {
   .contacts__item address,
-p,
-a {
+.contacts__item p,
+.contacts__item a {
     font-size: 18px;
     line-height: 152.34%;
   }
@@ -5025,6 +5032,7 @@ a {
 }
 
 .form h2 {
+  margin-top: 0;
   color: #ffffff;
   font-size: 54px;
   line-height: 156%;
@@ -5124,39 +5132,24 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 15px 10px 2px 0;
+  padding: 10px 10px 6px 0;
   border: none;
   border-bottom: 1px solid #74819c;
 }
 .form input::-webkit-input-placeholder {
-  color: transparent;
+  color: #ffffff;
 }
 .form input::-moz-placeholder {
-  color: transparent;
+  color: #ffffff;
 }
 .form input:-ms-input-placeholder {
-  color: transparent;
+  color: #ffffff;
 }
 .form input::-ms-input-placeholder {
-  color: transparent;
+  color: #ffffff;
 }
 .form input::placeholder {
-  color: transparent;
-}
-.form input + span:not(:-moz-placeholder-shown) {
-  top: 0;
-  font-size: 10px;
-  line-height: 10px;
-}
-.form input + span:not(:-ms-input-placeholder) {
-  top: 0;
-  font-size: 10px;
-  line-height: 10px;
-}
-.form input + span:focus, .form input + span:not(:placeholder-shown) {
-  top: 0;
-  font-size: 10px;
-  line-height: 10px;
+  color: #ffffff;
 }
 @media (hover: hover) {
   .form input:hover:not(.focus-visible) {

@@ -1,8 +1,8 @@
 .tariffs {
   position: relative;
   width: 100%;
-  padding-top: 82px;
-  padding-bottom: 120px;
+  padding-top: 76px;
+  padding-bottom: 116px;
   background-color: $color-ghost-white;
 
   @include vp-1199 {
@@ -63,8 +63,8 @@
   bottom: -72px;
   overflow: hidden;
   display: block;
-  width: 251px;
-  height: 367px;
+  width: 287px;
+  height: 352px;
 
   @include vp-1199 {
     bottom: -59px;

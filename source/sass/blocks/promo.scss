@@ -1,6 +1,6 @@
 .promo {
   padding-bottom: 30px;
-  padding-top: 116px;
+  padding-top: 118px;
 
   @include vp-1199 {
     padding-top: 98px;
@@ -48,6 +48,10 @@
   @include vp-1199 {
     column-gap: 22px;
     row-gap: 0;
+  }
+
+  .button {
+    padding: 27px 24px 28px 24px;
   }
 }
 
