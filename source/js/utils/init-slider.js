@@ -35,3 +35,18 @@ export const initTrainerSwiper = () => {
     },
   });
 };
+
+export const initReviewsSwiper = () => {
+  const reviewsSlider = new Swiper('.reviews__slider', { // eslint-disable-line
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 60,
+    autoHeight: true,
+
+    navigation: {
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
+    },
+  });
+};
