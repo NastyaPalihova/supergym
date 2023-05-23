@@ -1,0 +1,42 @@
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-767 {
+    justify-content: flex-start;
+  }
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1px 0;
+  color: inherit;
+
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item {
+  margin: 0;
+  margin-left: 11px;
+  padding: 0;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
