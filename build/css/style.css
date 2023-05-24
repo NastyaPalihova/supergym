@@ -3197,15 +3197,6 @@ h2 {
     margin-top: 0;
   }
 }
-.promo__description .button {
-  padding: 27px 24px 28px 24px;
-}
-@media (max-width: 1199px) {
-  .promo__description .button {
-    padding: 17px 24px 13px;
-    font-size: 10px;
-  }
-}
 
 .promo__description h2 {
   text-transform: uppercase;
@@ -3366,6 +3357,26 @@ h2 {
 }
 .promo__date:last-of-type {
   margin-bottom: 0;
+}
+
+.promo__button {
+  width: 100%;
+  max-width: 346px;
+  margin-top: 36px;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+@media (max-width: 1199px) {
+  .promo__button {
+    margin-top: 27px;
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px);
+  }
 }
 
 .trainer {
@@ -5324,11 +5335,10 @@ h2 {
      -moz-appearance: none;
           appearance: none;
   cursor: pointer;
-  /* stylelint-disable-next-line */
   -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .button::after {
   content: "";
@@ -5365,27 +5375,14 @@ h2 {
 }
 
 .button--promo {
-  text-transform: lowercase;
-  width: 100%;
-  max-width: 346px;
-  margin-top: 36px;
-  padding: 28px;
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-  -ms-grid-row-align: start;
-      align-self: start;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  text-transform: uppercase;
+  padding: 27px 24px 28px 24px;
 }
 @media (max-width: 1199px) {
   .button--promo {
-    margin-top: 27px;
-    padding: 15px;
+    padding: 17px 24px 13px;
     font-size: 10px;
     line-height: 12px;
-    -webkit-transform: translateY(2px);
-        -ms-transform: translateY(2px);
-            transform: translateY(2px);
   }
   .button--promo::after {
     border-width: 2px;
@@ -5396,10 +5393,6 @@ h2 {
     outline: 4px solid #ffffff;
     outline-offset: -4px;
   }
-}
-.button--promo.focus-visible:focus {
-  outline: 4px solid #ffffff;
-  outline-offset: -4px;
 }
 .button--promo.focus-visible:focus {
   outline: 4px solid #ffffff, 1px solid #003eb7;

@@ -19,8 +19,6 @@
   box-shadow: none;
   appearance: none;
   cursor: pointer;
-  /* stylelint-disable-next-line */
-  -webkit-user-select: none;
   user-select: none;
 
   &::after {
@@ -56,29 +54,20 @@
 }
 
 .button--promo {
-  text-transform: lowercase;
-  width: 100%;
-  max-width: 346px;
-  margin-top: 36px;
-  padding: 28px;
-  grid-column: span 2;
-  align-self: start;
-  justify-self: center;
+  text-transform: uppercase;
+  padding: 27px 24px 28px 24px;
 
   @include vp-1199 {
-    margin-top: 27px;
-    padding: 15px;
+    padding: 17px 24px 13px;
     font-size: 10px;
     line-height: 12px;
-
-    transform: translateY(2px);
 
     &::after {
       border-width: 2px;
     }
   }
 
-  @include hover-focus {
+  @include hover {
     outline: 4px solid $color-default-white;
     outline-offset: -4px;
   }

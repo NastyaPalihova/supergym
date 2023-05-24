@@ -1,9 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import initVideo from './utils/init-video';
-import {initTabs} from './utils/init-tabs';
-import {initTrainerSwiper} from './utils/init-slider';
-import {initReviewsSwiper} from './utils/init-slider';
+import initVideo from './modules/init-video';
+import {initTabs} from './modules/init-tabs';
+import {initTrainerSwiper} from './modules/init-slider';
+import {initReviewsSwiper} from './modules/init-slider';
 import './vendor/swiper';
 
 // ---------------------------------

@@ -25,11 +25,11 @@
 }
 
 .form-contacts-section__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    @include vp-1199 {
-      padding: 0;
-      grid-template-columns: 1fr;
-    }
+  @include vp-1199 {
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
 }
