@@ -1,5 +1,10 @@
 export const initTrainerSwiper = () => {
-  const trainerSlider = new Swiper('.swiper--trainer', { // eslint-disable-line
+  const container = document.querySelector('.swiper--trainer');
+  if (!container) {
+    return null;
+  }
+
+  return new window.Swiper('.swiper--trainer', {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 40,
@@ -37,7 +42,12 @@ export const initTrainerSwiper = () => {
 };
 
 export const initReviewsSwiper = () => {
-  const reviewsSlider = new Swiper('.reviews__slider', { // eslint-disable-line
+  const container = document.querySelector('.reviews__slider');
+  if (!container) {
+    return null;
+  }
+
+  return new window.Swiper('.reviews__slider', {
     direction: 'horizontal',
     loop: false,
     slidesPerView: 1,

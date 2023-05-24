@@ -1,6 +1,6 @@
 const tabsParentElement = document.querySelector('[data-tabs="parent"]');
 
-const onControlClick = (evt, controls, elements, parent) => {
+const handleControlClick = (evt, controls, elements, parent) => {
   const target = evt.target;
   const elementContent = target.dataset.content;
   const correspondingTab = parent.querySelector(`[data-element-content="${elementContent}"]`);
@@ -39,7 +39,7 @@ const initTabs = () => {
         }
 
         control.addEventListener('click', (evt) => {
-          onControlClick(evt, tabsControls, tabsElementsList, tabsParentElement);
+          handleControlClick(evt, tabsControls, tabsElementsList, tabsParentElement);
         });
       });
     }

@@ -48,13 +48,43 @@
 
 .button--secondary {
   color: $color-sapphire;
-  padding: 22px 0 28px 0;
+  padding: 24px 0 26px;
 
   &::after {
     border: 3px solid $color-sapphire;
   }
 }
 
-.tariffs .button--secondary {
-  padding: 24px 0 26px;
+.button--promo {
+  text-transform: lowercase;
+  width: 100%;
+  max-width: 346px;
+  margin-top: 36px;
+  padding: 28px;
+  grid-column: span 2;
+  align-self: start;
+  justify-self: center;
+
+  @include vp-1199 {
+    margin-top: 27px;
+    padding: 15px;
+    font-size: 10px;
+    line-height: 12px;
+
+    transform: translateY(2px);
+
+    &::after {
+      border-width: 2px;
+    }
+  }
+
+  @include hover-focus {
+    outline: 4px solid $color-default-white;
+    outline-offset: -4px;
+  }
+
+  @include focus {
+    outline: 4px solid $color-default-white, 1px solid $color-cobalt;
+    outline-offset: -4px, 4px;
+  }
 }

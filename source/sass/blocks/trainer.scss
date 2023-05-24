@@ -13,10 +13,6 @@
     padding-bottom: 38px;
   }
 
-  .container {
-    position: relative;
-  }
-
   h2 {
     box-sizing: border-box;
     width: 100%;
@@ -37,6 +33,10 @@
       margin-bottom: 10px;
     }
   }
+}
+
+.trainer__container {
+  position: relative;
 }
 
 .trainer__slider {

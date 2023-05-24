@@ -9,19 +9,17 @@ const createIframe = (block) => {
 };
 
 const initVideo = () => {
-  if (videoBlocks && videoBlocks.length) {
-    videoBlocks.forEach((block) => {
-      const videoCover = block.querySelector('[data-video-cover]');
-      const videoButton = block.querySelector('[data-video-button]');
-      const iframeBlock = block.querySelector('[data-video-container]');
+  videoBlocks.forEach((block) => {
+    const videoCover = block.querySelector('[data-video-cover]');
+    const videoButton = block.querySelector('[data-video-button]');
+    const iframeBlock = block.querySelector('[data-video-container]');
 
-      videoButton.addEventListener('click', () => {
-        const newIframe = createIframe(iframeBlock);
-        iframeBlock.append(newIframe);
-        videoCover.classList.add('hidden');
-      });
+    videoButton.addEventListener('click', () => {
+      const newIframe = createIframe(iframeBlock);
+      iframeBlock.append(newIframe);
+      videoCover.classList.add('hidden');
     });
-  }
+  });
 };
 
 export default initVideo;

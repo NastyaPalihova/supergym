@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = {
   rules: {
     // ECMAScript 6

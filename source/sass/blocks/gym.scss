@@ -238,7 +238,6 @@
     border-radius: 50%;
     opacity: 0.2;
     mask: radial-gradient(47px, $color-transparent 98%, $color-default-black);
-
     transform: translate(-50%, -50%);
 
     @include vp-1199 {
@@ -273,7 +272,7 @@
   }
 }
 
-.gym .container {
+.gym__container {
   @include vp-767 {
     padding: 0;
   }
