@@ -1,10 +1,17 @@
+function addTabindex() {
+  const originalSlides = document.querySelectorAll('.trainer__item:not(.swiper-slide-duplicate)');
+  for (let i = 0; i < originalSlides.length; i++) {
+    originalSlides[i].querySelector('.trainer-card').setAttribute('tabindex', '0');
+  }
+}
+
 export const initTrainerSwiper = () => {
   const container = document.querySelector('.swiper--trainer');
   if (!container) {
     return null;
   }
 
-  return new window.Swiper('.swiper--trainer', {
+  const TrainerSwiper = new window.Swiper('.swiper--trainer', {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 40,
@@ -38,7 +45,31 @@ export const initTrainerSwiper = () => {
         slidesPerGroup: 1,
       },
     },
+    on: {
+      init: () => {
+        addTabindex();
+        document.addEventListener('keydown', (evt) => {
+
+          if (evt.shiftKey && evt.key === 'Tab') {
+            const active = document.activeElement;
+            if (active.parentElement.classList.contains('swiper-slide-active')) {
+              const parentSlideIndex = active.parentElement.dataset.swiperSlideIndex;
+              if (parentSlideIndex > 0) {
+                TrainerSwiper.slidePrev(100, true);
+              }
+            }
+          } else if (!evt.shiftKey && evt.key === 'Tab') {
+            const active = document.activeElement;
+            if (active.parentElement.classList.contains('swiper-slide-next')) {
+              TrainerSwiper.slideNext(100, true);
+            }
+          }
+        });
+      },
+    },
   });
+
+  return TrainerSwiper;
 };
 
 export const initReviewsSwiper = () => {
