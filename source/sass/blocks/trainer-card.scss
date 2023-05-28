@@ -1,7 +1,7 @@
 .trainer-card {
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr;
   background-color: $color-link-water;
@@ -37,11 +37,17 @@
   grid-row: 1/2;
   width: 100%;
   overflow: hidden;
+  height: 100%;
 
   img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+
+    @include vp-767 {
+      object-fit: cover;
+      min-height: 273px;
+    }
   }
 }
 
@@ -63,6 +69,10 @@
   /* stylelint-disable-next-line */
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @include vp-1199 {
+    padding: 53px 30px 30px;
   }
 
   @include vp-767 {
