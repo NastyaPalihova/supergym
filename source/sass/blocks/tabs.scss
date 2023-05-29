@@ -14,12 +14,17 @@
 
   @include vp-1199 {
     margin-bottom: 52px;
+    row-gap: 30px;
+    min-width: 76px;
   }
 
   @include vp-767 {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 11px;
     margin-bottom: 41px;
+    row-gap: 30px;
+    column-gap: 46px;
   }
 
   &::after {
@@ -57,10 +62,14 @@
     margin-right: 54px;
   }
 
+  @media (max-width: 890px) {
+    text-align: left;
+  }
+
   @include vp-767 {
     font-size: 16px;
     line-height: 24px;
-    margin-right: 45px;
+    margin-right: 0;
   }
 
   &:last-child {

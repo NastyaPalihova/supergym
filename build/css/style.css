@@ -2720,14 +2720,22 @@ h2 {
 @media (max-width: 1199px) {
   .tabs__control-wrapper {
     margin-bottom: 52px;
+    row-gap: 30px;
+    min-width: 76px;
   }
 }
 @media (max-width: 767px) {
   .tabs__control-wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 11px;
     margin-bottom: 41px;
+    row-gap: 30px;
+    -webkit-column-gap: 46px;
+       -moz-column-gap: 46px;
+            column-gap: 46px;
   }
 }
 .tabs__control-wrapper::after {
@@ -2766,11 +2774,16 @@ h2 {
     margin-right: 54px;
   }
 }
+@media (max-width: 890px) {
+  .tabs__control {
+    text-align: left;
+  }
+}
 @media (max-width: 767px) {
   .tabs__control {
     font-size: 16px;
     line-height: 24px;
-    margin-right: 45px;
+    margin-right: 0;
   }
 }
 .tabs__control:last-child {
@@ -4310,10 +4323,6 @@ h2 {
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #59626e;
-}
-
-.reviews__slider .swiper-wrapper {
-  height: auto !important;
 }
 
 .advantages {
