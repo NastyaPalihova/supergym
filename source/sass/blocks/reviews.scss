@@ -1,6 +1,7 @@
 .reviews {
   padding-top: 2px;
   padding-bottom: 85px;
+  position: relative;
 
   @include vp-1199 {
     padding-top: 35px;
@@ -119,6 +120,9 @@
 
 .reviews__button--prev,
 .reviews__button--next {
+  position: absolute;
+  top: 13%;
+
   @include hover-focus {
     color: $color-cobalt-number;
   }
@@ -212,4 +216,8 @@
     object-fit: cover;
     background-color: $color-shuttle-grey;
   }
+}
+
+.reviews__slider .swiper-wrapper {
+  height: auto !important;
 }

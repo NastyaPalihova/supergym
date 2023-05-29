@@ -4038,6 +4038,7 @@ h2 {
 .reviews {
   padding-top: 2px;
   padding-bottom: 85px;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .reviews {
@@ -4183,6 +4184,11 @@ h2 {
   }
 }
 
+.reviews__button--prev,
+.reviews__button--next {
+  position: absolute;
+  top: 13%;
+}
 @media (hover: hover) {
   .reviews__button--prev:hover:not(.focus-visible),
 .reviews__button--next:hover:not(.focus-visible) {
@@ -4304,6 +4310,10 @@ h2 {
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #59626e;
+}
+
+.reviews__slider .swiper-wrapper {
+  height: auto !important;
 }
 
 .advantages {
