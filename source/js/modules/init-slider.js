@@ -83,7 +83,6 @@ export const initReviewsSwiper = () => {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 60,
-    autoHeight: true,
 
     navigation: {
       nextEl: '.reviews__button--next',

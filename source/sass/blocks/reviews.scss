@@ -52,6 +52,7 @@
 
 .reviews__item {
   width: 100%;
+  height: auto;
 }
 
 .reviews__button {
@@ -144,6 +145,9 @@
   row-gap: 13px;
   box-sizing: border-box;
   width: 560px;
+  height: 100%;
+  align-content: start;
+  justify-content: stretch;
   margin: 0 auto;
   padding: 55px 60px 50px 62px;
   background-color: $color-resolution-blue;
